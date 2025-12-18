@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <div class="previous-operand" id="previous-operand"></div>
+                <div class="current-operand" id="current-operand">0</div>
+            </div>
+
+            <div class="buttons-grid">
+                <button id="clear" class="btn action" data-action="clear"
+                    onclick="Calculator_View.action_operand('clear')">AC</button>
+                <button id="delete" class="btn action" data-action="delete"
+                    onclick="Calculator_View.action_operand('delete')">DEL</button>
+                <button id="percent" class="btn operator" data-operator="%"
+                    onclick="Calculator_View.active_operand('percent')">%</button>
+                <button id="divide" class="btn operator" data-operator="/"
+                    onclick="Calculator_View.active_operand('divide')">÷</button>
+
+                <button class="btn number" data-number="7" onclick="Calculator_View.choose_number(7)">7</button>
+                <button class="btn number" data-number="8" onclick="Calculator_View.choose_number(8)">8</button>
+                <button class="btn number" data-number="9" onclick="Calculator_View.choose_number(9)">9</button>
+                <button id="multiple" class="btn operator" data-operator="*"
+                    onclick="Calculator_View.active_operand('multiple')">×</button>
+
+                <button class="btn number" data-number="4" onclick="Calculator_View.choose_number(4)">4</button>
+                <button class="btn number" data-number="5" onclick="Calculator_View.choose_number(5)">5</button>
+                <button class="btn number" data-number="6" onclick="Calculator_View.choose_number(6)">6</button>
+                <button id="minus" class="btn operator" data-operator="-"
+                    onclick="Calculator_View.active_operand('minus')">-</button>
+
+                <button class="btn number" data-number="1" onclick="Calculator_View.choose_number(1)">1</button>
+                <button class="btn number" data-number="2" onclick="Calculator_View.choose_number(2)">2</button>
+                <button class="btn number" data-number="3" onclick="Calculator_View.choose_number(3)">3</button>
+                <button id="plus" class="btn operator" data-operator="+"
+                    onclick="Calculator_View.active_operand('plus')">+</button>
+
+                <button class="btn number span-two" data-number="0"
+                    onclick="Calculator_View.choose_number(0)">0</button>
+                <button id="dot" class="btn number" data-number="." onclick="Calculator_View.add_dot()">.</button>
+                <button id="equal-btn" class="btn equal" onclick="Calculator_View.equal()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
