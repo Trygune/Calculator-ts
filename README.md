@@ -1,2 +1,2 @@
 HTML & CSS created with Gemini
-JS done by ME
+JS done by TryGun
